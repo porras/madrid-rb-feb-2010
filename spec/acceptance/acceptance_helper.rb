@@ -11,4 +11,5 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 Spec::Runner.configure do |config|
   config.include(Capybara)
+  config.include(Factories)
 end
