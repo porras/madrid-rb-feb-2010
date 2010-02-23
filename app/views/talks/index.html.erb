@@ -1,9 +1,9 @@
-<ul>
+<ul id="talks">
   <% @talks.each do |talk| %>
   <li class="talk"><%= talk.title %></li>
   <% end %>
 </ul>
-<% form_for Talk.new  do |f| %>
+<% form_remote_for Talk.new  do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.submit "Add" %>

@@ -5,7 +5,10 @@ class TalksController < ApplicationController
   end
   
   def create
-    Talk.create!(params[:talk])
-    redirect_to talks_path
+    @talk = Talk.create!(params[:talk])
+    respond_to do |format|
+      format.html { redirect_to talks_path }
+      format.js
+    end
   end
 end

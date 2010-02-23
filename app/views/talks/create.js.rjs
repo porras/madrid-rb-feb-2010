@@ -1,0 +1,2 @@
+page.insert_html :bottom, "talks", content_tag(:li, @talk.title, :class => "talk")
+page << "Form.reset('new_talk')"
