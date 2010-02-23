@@ -12,6 +12,14 @@ feature "Talks list" do
     
   end
   
-  scenario "Creating talks"
+  scenario "Creating talks" do
+    
+    visit "/talks"
+    fill_in "Title", :with => "Unit Testing"
+    click_button "Add"
+    
+    page.should have_css(".talk", :text => "Unit Testing")
+    
+  end
   
 end
