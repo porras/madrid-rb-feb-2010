@@ -5,7 +5,7 @@ require "capybara/rails"
 require "capybara/dsl"
 require 'database_cleaner'
 
-Capybara.default_driver = :selenium
+Capybara.default_driver = :culerity
 DatabaseCleaner.strategy = :truncation
 
 # Put your acceptance spec helpers inside /spec/acceptance/support
