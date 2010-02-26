@@ -13,4 +13,4 @@ It's a (very) simple Rails application tested with [Steak](http://github.com/cav
 7. We configured Capybara to use Selenium and ran the same tests. Although that change is not checked in, we commented `app/controllers/talks_controller.rb:10` to demostrate we were actually running the Ajax version
 8. We configured Capybara to use Culerity and repeated the same tests again
 
-The we went to [Las Jarritas](http://11870.com/pro/bar-las-jarritas) and drank a lot of beer ;)
+Then we went to [Las Jarritas](http://11870.com/pro/bar-las-jarritas) and drank a lot of beer ;)
